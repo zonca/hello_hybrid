@@ -3,7 +3,9 @@
 #include <omp.h>
 
 int main(int argc, char *argv[]) {
-  int numprocs, rank, namelen;
+  int numprocs;
+  int rank;
+  int namelen;
   char processor_name[MPI_MAX_PROCESSOR_NAME];
   int iam = 0, np = 1;
 

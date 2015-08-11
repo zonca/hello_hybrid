@@ -14,6 +14,8 @@ int main(int argc, char *argv[]) {
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Get_processor_name(processor_name, &namelen);
 
+  printf("Hello world from process %d", rank);
+
   #pragma omp parallel default(shared) private(iam, np)
   {
     np = omp_get_num_threads();

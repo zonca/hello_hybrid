@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
   {
     np = omp_get_num_threads();
     iam = omp_get_thread_num();
-    printf("Hello from thread %d out of %d from process %d out of %d on %s\n",
+    printf("Hello world from thread %d out of %d from process %d out of %d on %s\n",
            iam, np, rank, numprocs, processor_name);
   }
 

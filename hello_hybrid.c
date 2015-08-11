@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
   int numprocs;
-  int rank;
+  int rank; #urgent fix
   int namelen;
   char processor_name[MPI_MAX_PROCESSOR_NAME];
   int iam = 0, np = 1;
